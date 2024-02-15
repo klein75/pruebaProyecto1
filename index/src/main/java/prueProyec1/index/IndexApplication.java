@@ -16,6 +16,7 @@ public class IndexApplication {
 	@GetMapping("/hola")
     public String hola(@RequestParam(value = "name", defaultValue = "mundo") String name) {
       return String.format("hola %s!", name);
+	  //ahora dira adios 
     }
 	@GetMapping("/adios")
     public String adios(@RequestParam(value = "name", defaultValue = "mundo cruel") String name) {
